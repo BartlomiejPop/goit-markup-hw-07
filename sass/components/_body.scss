@@ -1,6 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    color: #212121;
+    color: $defaultTextColor;
 }
 
 img,
@@ -12,4 +17,8 @@ svg {
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.section {
+    padding: 94px 0;
 }

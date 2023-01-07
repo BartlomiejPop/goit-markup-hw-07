@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -67,10 +68,6 @@ svg {
     list-style: none;
 }
 
-.header-container__item {
-    position: relative;
-}
-
 .header-container__link {
     text-decoration: none;
     font-weight: 500;
@@ -120,7 +117,6 @@ svg {
     padding-right: 12px;
     margin-left: 335px;
     gap: 30px;
-
     list-style: none;
 }
 
@@ -202,12 +198,10 @@ svg {
 .slogan-btn {
     padding: 10px 41px 10px 42px;
     margin-bottom: 106px;
-
     cursor: pointer;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
-
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: var(--white-color);
@@ -308,7 +302,7 @@ svg {
     color: var(--text-color);
 }
 
-.team-members {
+.team-member {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -350,7 +344,7 @@ svg {
     color: var(--white-grey-text);
 }
 
-.team-members figure {
+.team-member-card__figure {
     padding-bottom: 30px;
 }
 
@@ -628,7 +622,7 @@ svg {
     letter-spacing: 0.03em;
 }
 
-.portfolio figure {
+.portfolio__figure {
     background: var(--white-color);
 }
 

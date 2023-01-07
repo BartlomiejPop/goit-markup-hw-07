@@ -1,0 +1,44 @@
+.our-client-text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+.client-list {
+    margin-top: 50px;
+    gap: 30px;
+    list-style: none;
+    display: flex;
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        border: 1px solid $svgIconColor;
+        border-radius: 4px;
+    }
+
+    &__icon {
+        fill: $svgIconColor;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        border-color: $highlightColor;
+        cursor: pointer;
+    }
+
+    &__link:hover > &__icon,
+    &__link:focus > &__icon {
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        fill: $highlightColor;
+    }
+}
