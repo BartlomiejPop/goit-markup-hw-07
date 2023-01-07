@@ -40,13 +40,13 @@
         transition-timing-function: $transitionTimingFunction;
         color: $highlightColor;
     }
-}
 
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+    }
 }
 
 .media {
@@ -64,8 +64,8 @@
     }
 }
 
-.logo__first-color {
-    color: $highlightColor;
+.logo__studio--white {
+    color: $whiteColor;
 }
 
 .social-media--margin-top {

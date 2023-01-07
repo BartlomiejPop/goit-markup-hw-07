@@ -1,4 +1,4 @@
-.header-container {
+.header {
     padding: 24px 0 25px;
     border-bottom: 1px solid $headerBorderColor;
     background-color: $whiteColor;
@@ -105,9 +105,9 @@
     font-size: 26px;
     line-height: 1.1;
     letter-spacing: 0.03em;
-    color: var(--black-color);
+    color: $highlightColor;
 
-    &__first-color {
-        color: $highlightColor;
+    &__studio--black {
+        color: $blackColor;
     }
 }

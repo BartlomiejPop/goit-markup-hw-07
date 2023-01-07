@@ -1,19 +1,22 @@
-.our-client-text {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--text-color);
-}
+.clients {
+    &__quote {
+        padding-top: 94px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $defaultTextColor;
+    }
 
-.client-list {
-    margin-top: 50px;
-    gap: 30px;
-    list-style: none;
-    display: flex;
+    &__list {
+        margin-top: 50px;
+        gap: 30px;
+        list-style: none;
+        display: flex;
+    }
 
-    &__link {
+    &__list-link {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -23,20 +26,20 @@
         border-radius: 4px;
     }
 
-    &__icon {
+    &__list-icon {
         fill: $svgIconColor;
     }
 
-    &__link:hover,
-    &__link:focus {
+    &__list-link:hover,
+    &__list-link:focus {
         transition-duration: 250ms;
         transition-timing-function: $transitionTimingFunction;
         border-color: $highlightColor;
         cursor: pointer;
     }
 
-    &__link:hover > &__icon,
-    &__link:focus > &__icon {
+    &__list-link:hover > &__list-icon,
+    &__list-link:focus > &__list-icon {
         transition-duration: 250ms;
         transition-timing-function: $transitionTimingFunction;
         fill: $highlightColor;
