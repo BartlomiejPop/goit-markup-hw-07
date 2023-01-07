@@ -8,7 +8,7 @@
     animation-name: modalAppear;
     transition-property: visibility, opacity, transform;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $transitionTimingFunction;
 }
 
 .modal {
@@ -80,7 +80,7 @@
 
     &-label__input:focus {
         transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-timing-function: $transitionTimingFunction;
         cursor: pointer;
         border-color: $highlightColor;
         outline: none;
@@ -89,7 +89,7 @@
     &-label__input:focus + .modal-icon {
         fill: $highlightColor;
         transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-timing-function: $transitionTimingFunction;
         outline: none;
     }
 
@@ -121,7 +121,7 @@
 
     &-label__textarea:focus {
         transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-timing-function: $transitionTimingFunction;
         cursor: pointer;
         border-color: $highlightColor;
         outline: none;
@@ -138,7 +138,7 @@
     &__img {
         position: absolute;
         opacity: 0;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: opacity 250ms $transitionTimingFunction;
         top: -2px;
         left: -2px;
         border-radius: 2px;

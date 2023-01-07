@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }
-
+$transitionTimingFunction: cubic-bezier(0.4, 0, 0.2, 1);
 $fontFamily: 'Roboto, sans-serif';
 $defaultTextColor: #212121;
 $highlightColor: #2196f3;
